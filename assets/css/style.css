@@ -901,6 +901,9 @@
     transform: skewX(40deg);
 }
 
+.z-1000{
+    z-index: 1000;
+}
 
 .span4 {
     transform: rotate(45deg) !important;
