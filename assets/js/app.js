@@ -26,6 +26,7 @@ let navbtn11 = document.querySelector(".nav-btn11")
 let navbtn12 = document.querySelector(".nav-btn12")
 let navbtn13 = document.querySelector(".nav-btn13")
 let navbtn14 = document.querySelector(".nav-btn14")
+let hidden = document.querySelector(".hidden")
 
 menu.addEventListener("click", function () {
     mobileView.classList.toggle("show");
@@ -33,6 +34,7 @@ menu.addEventListener("click", function () {
     span1.classList.toggle("span4");
     span2.classList.toggle("span5");
     span3.classList.toggle("span6");
+    hidden.style.display = 'none';
 })
 navbtn.addEventListener("click", function () {
     mobileView.classList.remove("show");
@@ -74,8 +76,6 @@ navbtn14.addEventListener("click", function () {
 
 // ************ Back to Top ************
 const backToTopButton = document.getElementById('back-to-top');
-
-// Add a scroll event listener to toggle the button's visibility
 window.addEventListener('scroll', () => {
     if (window.scrollY > 200) {
         backToTopButton.style.display = 'block';
@@ -84,7 +84,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Add a click event listener to scroll to the top when the button is clicked
 backToTopButton.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
