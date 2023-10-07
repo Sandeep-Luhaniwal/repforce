@@ -98,7 +98,7 @@
 }
 
 .bg_img1 {
-    background: url("../image/png/bg_img1.png") no-repeat;
+    background: url("../image/png/bg_img1.webp") no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 15px;
@@ -107,7 +107,7 @@
 }
 
 .bg_img2 {
-    background: url("../image/png/bg_img2.png") no-repeat;
+    background: url("../image/png/bg_img2.webp") no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 15px;
@@ -116,7 +116,7 @@
 }
 
 .bg_img3 {
-    background: url("../image/png/bg_img3.png") no-repeat;
+    background: url("../image/png/bg_img3.webp") no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 15px;
@@ -513,6 +513,33 @@
     transform: translate(5px) scale(1.02);
 }
 
+.hover:active .peopeImg {
+    animation: rotrer 4000ms infinite;
+    transition: all linear 400ms;
+}
+
+@keyframes rotrer {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(-30px) translateX(0);
+    }
+
+    50% {
+        transform: translateX(30px) translateY(-30px);
+    }
+
+    75% {
+        transform: translateX(0) translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 .hover:hover .growbox {
     background-color: var(--red-color);
     transform: translateY(10px) translateX(10px);
@@ -691,7 +718,7 @@
 }
 
 .bg_imgSection {
-    background: url(/assets/image/png/bg_img4.png) no-repeat;
+    background: url(/assets/image/png/bg_img4.webp) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -901,7 +928,7 @@
     transform: skewX(40deg);
 }
 
-.z-1000{
+.z-1000 {
     z-index: 1000;
 }
 
